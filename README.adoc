@@ -1,0 +1,31 @@
+== 2016census-hackathon
+.This ansible script provisions a vagrant box with:
+* Oracle Java 8
+* spark_version: "2.0.0-bin-hadoop2.7"
+* Anaconda3-4.2.0-Linux-x86_64.sh (python3)
+* Jupyter Scala binaries for Scala 2.11 when using python3
+
+=== License
+The MIT License (MIT).  See LICENSE.adoc
+
+=== What is needed to run the program
+You must have Ansible, VirtualBox, and Vagrant installed.  
+See ANSIBLE.adoc.
+As provided, the Vagrant VM will use all of your cores and 1/2 of your memory.
+
+=== How to run
+.To get this project working, perform the minimum steps:
+----
+ $ go.sh
+----
+
+.To Use:
+* create a file called data/apikey.py and add the line  apikey = "<your key>"
+* open http://localhost:8888 in the browser
+* change directory to /vagrant/data in Jupiter notebook
+* open census01.ipynb notebook
+* run Cell/Run All
+
+.Notes:
+* in the Python Jupyter notebook you can access the spark context with variable sc
+* remember to do `vagrant destroy` when you are done
