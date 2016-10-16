@@ -21,6 +21,7 @@ As provided, the Vagrant VM will use all of your cores and 1/2 of your memory.
 
 .To Use:
 * create a file called data/apikey.py and add the line  apikey = "<your key>"
+  - you can get a key from http://api.census.gov/data/key_signup.html[http://api.census.gov/data/key_signup.html] more info at https://uscensusbureau.github.io/citysdk/[https://uscensusbureau.github.io/citysdk/]
 * open http://localhost:8888 in the browser
 * change directory to /vagrant/data in Jupiter notebook
 * open census01.ipynb notebook
